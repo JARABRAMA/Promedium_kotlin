@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activityes.NewCourseActivity"
+    android:background="?attr/backgroundColor">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Materia"
+        app:layout_constraintBottom_toTopOf="@+id/dataLayout"
+        app:layout_constraintStart_toStartOf="@+id/dataLayout"
+        app:layout_constraintEnd_toEndOf="@id/dataLayout"
+        android:layout_marginBottom="25dp"
+        android:textSize="28sp"
+        >
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <LinearLayout
+        android:id="@+id/dataLayout"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edges_primary_dark_color">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la materia"
+            android:textSize="18sp"
+            android:textColor="?attr/backgroundColor">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/text_view_background"
+            android:singleLine="true"
+            android:maxLines="1"
+            tools:text="a name"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:inputType="text">
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creditos de la materia"
+            android:textSize="18sp"
+            android:textColor="?attr/backgroundColor">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edCredits"
+            android:layout_width="250dp"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_view_background"
+            android:singleLine="true"
+            android:maxLines="1"
+            tools:text="3"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:inputType="number">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguente"
+        android:textColor="?attr/backgroundColor"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_edges_primary_dark_color"
+        app:layout_constraintTop_toBottomOf="@+id/dataLayout"
+        app:layout_constraintStart_toStartOf="@id/dataLayout"
+        app:layout_constraintEnd_toEndOf="@id/dataLayout">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
